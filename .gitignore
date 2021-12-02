@@ -1,0 +1,10 @@
+# Modules
+dist
+node_modules/
+
+# Mics
+.DS_Store
+.idea/
+.prettierrc.json/
+yarn-error.log
+yarn.lock

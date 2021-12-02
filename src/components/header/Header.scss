@@ -1,0 +1,14 @@
+header {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.mainMenu {
+  display: flex;
+  color: white;
+  position: absolute;
+  right: 105px;
+  top: 30px;
+  align-items: center;
+}

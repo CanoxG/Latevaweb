@@ -1,0 +1,13 @@
+.firstLevel {
+  text-decoration: none;
+  font-size: 14px;
+  margin: 0 1rem;
+}
+
+.itemList {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  list-style: none;
+  cursor: pointer;
+}

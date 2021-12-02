@@ -1,0 +1,21 @@
+.rowList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.addressBar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+  width: 100%;
+}
+
+.listItem {
+  list-style: none;
+  padding-right: 10px;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
