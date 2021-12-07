@@ -1,0 +1,14 @@
+.icon {
+  padding-left: 11px;
+  width: 20%;
+}
+
+.heartIcon {
+  color: #e16967;
+}
+
+@media only screen and (max-width: 780px) {
+  .icon {
+    width: 100%;
+  }
+}

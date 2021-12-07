@@ -1,19 +1,20 @@
 import React from "react";
 import styles from "./Home.scss";
-import BaseLayout from "../../../components/layout/BaseLayout";
-import Header from "../../../components/header/Header";
-import Claim from "../../../components/claim/Claim";
 import RedList from "../red-list/RedList";
-import Footer from "../../../components/footer/Footer";
 import BlockOne from "../../../components/containers/block-one/BlockOne";
 import WH2 from "../../../components/headings/wh2/WH2";
 import Sticker from "../../../components/sticker/Sticker";
 import FlexMiddle from "../../../components/containers/flex-middle/FlexMiddle";
 import H2 from "../../../components/headings/h2/H2";
 import Projects from "../projects/project/Projects";
-import SectionContainer from "../../../components/containers/section-container/SectionContainer";
+import BaseContainer from "../../../components/containers/section-container/BaseContainer";
 import Frame from "../../../components/containers/frame/Frame";
 import ViewBtn from "../../../components/buttons/View/ViewBtn";
+import Flex from "../../../components/containers/flex-default/Flex";
+import Claim from "../claim/Claim";
+import TextBox from "../../../components/text/text-box/TextBox";
+import TextFrame from "../../../components/text/text-frame/TextFrame";
+import RedBrick from "../../../components/red-brick/RedBrick";
 
 export function Home() {
   const background = {
@@ -27,33 +28,43 @@ export function Home() {
   };
 
   return (
-    <BaseLayout>
-      <Header />
+    <>
       <div style={background} className={styles.imgFrame}>
-        <Claim />
+        <Flex>
+          <Claim />
+        </Flex>
       </div>
       <RedList />
-      <BlockOne>
-        <div style={backgroundLeft} className={styles.imgFrameLeft}></div>
+      <BlockOne color="grey">
+        <div style={backgroundLeft} className={styles.imgFrameLeft}>
+          <RedBrick />
+        </div>
         <FlexMiddle>
-          <div className={styles.redBrick}></div>
-          <div className={styles.textFrame}>
+          <TextBox>
             <WH2>
               Our major advantage: Custom-designed websites for the client
             </WH2>
-            We have over 19 years experience in web design. We have worked on a
-            large number of web design and optimization projects, online shop
-            designs, strategies for social networks, social media and website
-            design. We cover each and every need that your company may have in
-            relation to online marketing and web design, and we take charge of
-            the entire process. We work for companies and organizations of all
-            sizes, in Barcelona, Spain and abroad.
-          </div>
-          <Sticker />
+            <p className={styles.textColor}>
+              We have over 19 years experience in web design. We have worked on
+              a large number of web design and optimization projects, online
+              shop designs, strategies for social networks, social media and
+              website design. We cover each and every need that your company may
+              have in relation to online marketing and web design, and we take
+              charge of the entire process. We work for companies and
+              organizations of all sizes, in Barcelona, Spain and abroad.
+            </p>
+          </TextBox>
+          <Sticker>
+            <TextFrame>
+              <p className={styles.textColor}>
+                Effective web design that produces results
+              </p>
+            </TextFrame>
+          </Sticker>
         </FlexMiddle>
       </BlockOne>
       <Frame>
-        <SectionContainer>
+        <BaseContainer>
           <FlexMiddle align="center">
             <div className={styles.textCenter}>
               <H2>Featured Projects</H2>
@@ -67,9 +78,8 @@ export function Home() {
           </FlexMiddle>
           <Projects />
           <ViewBtn />
-        </SectionContainer>
+        </BaseContainer>
       </Frame>
-      <Footer />
-    </BaseLayout>
+    </>
   );
 }

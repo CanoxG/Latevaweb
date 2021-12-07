@@ -15,27 +15,17 @@
   height: 100%;
 }
 
-.textFrame {
-  max-width: 462px;
-  margin-bottom: 190px;
-  margin-top: 100px;
-  margin-left: 78px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
 .imgFrameLeft {
-  width: 695px;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 40%;
+  min-height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.redBrick {
-  width: 60px;
-  height: 20px;
-  background-color: #e16967;
-  position: absolute;
-  left: 664px;
+.textColor {
+  color: white;
+  margin: 0;
 }
-

@@ -2,7 +2,7 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: path.join(__dirname, './src/index.js'),
+  entry: path.join(__dirname, "./src/index.js"),
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "index.bundle.js",
@@ -10,6 +10,7 @@ module.exports = {
   devServer: {
     port: 3010,
     watchContentBase: true,
+    historyApiFallback: true,
   },
   module: {
     rules: [
@@ -21,11 +22,15 @@ module.exports = {
         },
       },
       {
+        test: /\.svg$/,
+        use: ["@svgr/webpack"],
+      },
+      {
         test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
           {
-            loader: 'css-loader',
+            loader: "css-loader",
             options: {
               importLoaders: 1,
               import: true,

@@ -1,8 +1,8 @@
 import React from "react";
-import styles from './SectionContainer.scss';
+import styles from './BaseContainer.scss';
 
 
-export default function SectionContainer({  children }) {
+export default function BaseContainer({  children }) {
 
   return (
     <div className={styles.baseContainer}>

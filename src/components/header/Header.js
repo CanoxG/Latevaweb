@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Header.scss";
-import WhiteLogo from "../logo/WhiteLogo";
+import WhiteLogo from "../logo/white-logo/WhiteLogo";
 import Navbar from "../navbar/Navbar";
 import Contact from "../buttons/contact/Contact";
 import { Phone } from "../phone/Phone";

@@ -1,0 +1,37 @@
+.textContainer {
+  width: 50%;
+  height: 100%;
+  color: white;
+  margin-left: -250px;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  padding-top: 5rem;
+  padding-right: 2rem;
+
+}
+
+.textBox {
+  background-color: #052b4b;
+  padding: 3rem;
+}
+.textContainer h1 {
+  font-size: 4rem;
+  line-height: 3.5rem;
+  margin-top: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 30px;
+
+}
+
+@media only screen and (max-width: 1400px ) {
+  .textContainer {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 780px ) {
+  .textContainer {
+    width: 80%;
+  }
+}

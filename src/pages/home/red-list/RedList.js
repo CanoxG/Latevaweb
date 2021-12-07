@@ -4,12 +4,12 @@ import { DIGITAL } from "../../../fixtures/digital";
 import { DESIGN } from "../../../fixtures/design";
 import FlexMiddle from "../../../components/containers/flex-middle/FlexMiddle";
 import H2 from "../../../components/headings/h2/H2";
-import SectionContainer from "../../../components/containers/section-container/SectionContainer";
+import BaseContainer from "../../../components/containers/section-container/BaseContainer";
 
 export default function RedList() {
   return (
     <section>
-      <SectionContainer>
+      <BaseContainer>
         <FlexMiddle>
           <div className={styles.text}>
             <H2>A good web design</H2>
@@ -63,7 +63,7 @@ export default function RedList() {
             </ul>
           </div>
         </FlexMiddle>
-      </SectionContainer>
+      </BaseContainer>
     </section>
   );
 }

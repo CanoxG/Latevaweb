@@ -1,6 +1,8 @@
 .rowList {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
+  width: 80%;
   margin: 0;
   padding-left: 10px;
   padding-right: 10px;
@@ -8,14 +10,15 @@
 
 .addressBar {
   display: flex;
-  justify-content: space-between;
   padding-top: 3rem;
-  width: 100%;
+  max-width: 100%;
+  flex-wrap: wrap;
+
 }
 
 .listItem {
-  list-style: none;
   padding-right: 10px;
   margin-bottom: 0.5rem;
   text-align: left;
 }
+

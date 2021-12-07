@@ -1,0 +1,23 @@
+.container {
+  width: 60%;
+  padding: 0 0 10% 7%;
+}
+
+.text {
+  max-width: 50%;
+  color: white;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+@media only screen and ( max-width: 1080px ) {
+  .text {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and ( max-width: 600px ) {
+  .text {
+    font-size: 1rem;
+  }
+}

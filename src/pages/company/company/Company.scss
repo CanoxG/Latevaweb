@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+}
+
+.backgroundFrame {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.background {
+  width: 40%;
+  background-color: #052b4b;
+}
+
+.textContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  max-width: 1336px;
+  width: 100%;
+}
+
+.logo {
+  color: #f0f0f0;
+  width: 40%;
+}
+
+.imgFrame {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.textColor {
+  color: black;
+  margin: 0;
+}
+
+.rightImg {
+  width: 50%;
+}
+
+.leftImg {
+  width: 35%;
+}
+
+.textBox {
+  width: 200%;
+}

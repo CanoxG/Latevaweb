@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Logo.scss";
+import styles from "./TextLogo.scss";
 
 
 export default function TextLogo() {

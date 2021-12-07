@@ -1,5 +1,4 @@
 .firstLevel {
-  text-decoration: none;
   font-size: 14px;
   margin: 0 1rem;
 }
@@ -10,4 +9,21 @@
   margin: 0;
   list-style: none;
   cursor: pointer;
+}
+
+.itemList a {
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1400px) {
+  .firstLevel {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  .firstLevel {
+    font-size: 10px;
+  }
 }

@@ -1,14 +1,18 @@
 header {
   display: flex;
-  justify-content: space-evenly;
-  position: relative;
+  background-color: #052b4b;
 }
 
 .mainMenu {
   display: flex;
+  padding-top: 25px;
+  padding-right: 3.5rem;
   color: white;
-  position: absolute;
-  right: 105px;
-  top: 30px;
   align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .mainMenu {
+    display: none;
+  }
 }

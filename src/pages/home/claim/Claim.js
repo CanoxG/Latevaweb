@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Claim.scss";
-import RedBtn from "../buttons/red/RedBtn";
-import H1 from "../headings/h1/H1";
+import RedBtn from "../../../components/buttons/red/RedBtn";
+import H1 from "../../../components/headings/h1/H1";
 
 export default function Claim() {
   return (

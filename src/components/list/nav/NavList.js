@@ -1,38 +1,39 @@
 import React from "react";
 import styles from "./NavList.scss";
+import { Link } from "react-router-dom";
 
 const mainMenu = [
   {
     name: "Home",
-    url: "",
+    url: "/",
   },
   {
     name: "Company",
-    url: "",
+    url: "/company",
   },
   {
     name: "Web design",
-    url: "",
+    url: "/web-design",
   },
   {
     name: "Marketing digital",
-    url: "",
+    url: "/marketing-digital",
   },
   {
     name: "Work",
-    url: "",
+    url: "/work",
   },
   {
     name: "Blog",
-    url: "",
+    url: "/blog",
   },
   {
     name: "Prices",
-    url: "",
+    url: "/price",
   },
   {
     name: "Contact",
-    url: "",
+    url: "/content",
   },
 ];
 
@@ -41,10 +42,10 @@ export default function NavList() {
     <ul className={styles.itemList}>
       {mainMenu.map((item) => (
         <li key={item.name} className={styles.firstLevel}>
-          {item.name}
-          <a href={item.path}></a>
+          <Link to={item.url}> {item.name} </Link>
         </li>
       ))}
     </ul>
   );
 }
+
